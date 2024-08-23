@@ -15,7 +15,6 @@ set(PICO_CXX_ENABLE_EXCEPTIONS 1)
 pico_sdk_init()
 
 #include Libraries
-add_compile_definitions(configUSE_CORE_AFFINITY=0)
 SET(FREERTOS_KERNEL_PATH "$ENV{PICO_FREERTOS}" CACHE STRING "Course Common Lib")
 SET(FREERTOS_CONFIG_FILE_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/port/FreeRTOS-Kernel" CACHE STRING "Local Config")
 include("${FREERTOS_CONFIG_FILE_DIRECTORY}/freertos_config.cmake") 
